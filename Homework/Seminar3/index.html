@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Семинар 3. Домашняя работа</title>
+    <style>
+        body {
+            height: 800px; /* Высота блока */
+            border: 2px solid rgb(255, 255, 255); /* Параметры рамки */
+            background: url(images/IMG_20190727_164419.jpg) 30% 30% no-repeat; /* Добавляем фон */
+            background-size: cover; /* Масштабируем фон */
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>ФИО: <span id="name">Соловьев Александр Михайлович</span></h1>
+    <h2>Дата рождения: <span id="birth_date">10 ноября 1983 г.</span></h2>
+    <h3>Место работы: <span id="job">студент</span></h3>
+    <input id="clickMe" type="button" value="Ну давай изменим" onclick="changeData();"/>
+    
+    
+    
+    <script language="JavaScript">
+        function changeData() {
+            let name = prompt("Введите имя");
+            let birth_date = prompt("Введите дату рождения");
+            let job = prompt("Введите место работы");
+            document.getElementById("name").innerHTML = name;
+            document.getElementById("birth_date").innerHTML = birth_date;
+            document.getElementById("job").innerHTML = job;        
+        }
+    </script>
+
+</body>
+</html>
+
+
